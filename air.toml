@@ -1,0 +1,23 @@
+# air.toml
+
+# Watch these file extensions.
+exts = ["go", "tpl", "tmpl", "html"]
+
+# File suffix to ignore.
+ignore = [""]
+
+# Automatically restart the app when crashed.
+restart = "poll"
+
+# This log file is relative to `cmd` dir.
+log = "air.log"
+
+# Clear terminal before build.
+clear = true
+
+# go run .
+[[targets]]
+  # Applicable file extensions.
+  patterns = ["*.go"]
+  # Exclude directories.
+  dirs = ["assets", "tmp", "vendor", "node_modules", "public", "log"]
